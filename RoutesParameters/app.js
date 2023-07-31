@@ -6,7 +6,7 @@ app.get('/questions/:id/:title', (req, res) => {
 });
 
 app.get('/users/:id/:username', (req, res) => {
-    res.send('this route handles all the users');
+    res.send('this route handles all the users of stackoverflow');
 })
 
 app.listen(3000, () => {
