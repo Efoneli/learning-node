@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
 
-app.get('/demo', (req, res) => {
-    res.render('index.ejs')
+app.get('/user/:id/:username', (req, res) => {
+    let userId = req.params.id;
+    let user = req.params.username;
+    res.render('index.ejs', {id : userId, username : user})
 })
 
 
