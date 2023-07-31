@@ -13,6 +13,7 @@
   "author": "efoneli",
   "license": "ISC",
   "dependencies": {
-    "casual": "^1.6.2"
+    "casual": "^1.6.2",
+    "express": "^4.18.2"
   }
 }
