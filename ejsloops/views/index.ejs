@@ -2,4 +2,8 @@
     StackOverflow Questions
 </h1>
 
-ques
+<% questions.forEach((question) => { %>
+    <h2> <% question['title'] %> </h2>
+    <p> <% question['user'] %> </p>
+    <p> <% question['votes'] %> </p>
+<% }) %> 
