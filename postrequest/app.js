@@ -4,7 +4,6 @@ const path = require('path');
 const bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({ extended: true }));
-
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -24,7 +23,7 @@ app.post('/login', (req, res) => {
     if (username === 'john' && password === 'pass') {
         res.redirect('/dashboard');
     }
-})
+});
 
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
