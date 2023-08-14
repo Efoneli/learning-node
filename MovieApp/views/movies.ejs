@@ -6,14 +6,14 @@
     </head>
 
     <body>
-        <h1 id="searchHeading">Search results <span style="color: gray;">></span> <%= movie["searchQuery.toUpperCase()"] %></h1>
+        <h1 id="searchHeading">Search results <span style="color: gray;"></span> <%= movie["searchQuery.toUpperCase()"] %></h1>
 
         <% data["results"].forEach((movie) => { %>
 
             <div class="card mb-5 w-75">
                 <div class="row no-gutters">
                     <div class="col-md-4">
-                        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2 <%=movie[poster_path]" class="card-img img-fluid" alt="" />
+                        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2<%= movie[poster_path]%>" class="card-img img-fluid" alt="" />
                     </div>
     
                     <div class="col-md-8">
